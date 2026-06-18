@@ -85,6 +85,17 @@ size: 16:9
     color: #9945ff;
     display: block;
   }
+  .flow-step {
+    color: #9945ff !important;
+    -webkit-text-fill-color: #9945ff !important;
+  }
+  .flow-step.good {
+    color: #0a8a5f !important;
+    -webkit-text-fill-color: #0a8a5f !important;
+  }
+  .flow-arrow {
+    color: #14f195 !important;
+  }
 }
 
 section {
@@ -113,7 +124,7 @@ h2 {
   top: 48px;
   left: 72px;
   right: 72px;
-  font-size: 38px;
+  font-size: 34px;
   padding-bottom: 16px;
 }
 
@@ -255,11 +266,67 @@ section.lead em {
 }
 .col-title.bad { color: #aaaaaa; }
 
-footnote a {
+/* Flow diagram */
+.flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0 24px;
+}
+.flow-step {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  padding: 14px 26px;
+  border: 2px solid #9945ff;
+  border-radius: 10px;
+  background: rgba(153, 69, 255, 0.06);
+  color: #9945ff;
+  -webkit-text-fill-color: #9945ff;
+}
+.flow-step.good {
+  border-color: #14f195;
+  background: rgba(20, 241, 149, 0.10);
+  color: #0a8a5f;
+  -webkit-text-fill-color: #0a8a5f;
+}
+.flow-arrow {
+  font-size: 34px;
+  font-weight: 700;
+  color: #14f195;
+  -webkit-text-fill-color: #14f195;
+}
+
+/* Headshot */
+.headshot {
+  float: right;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #9945ff;
+  margin: 96px 0 16px 28px;
+  object-fit: cover;
+  background: #eee;
+}
+
+/* Back-cover contact block */
+.contact {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 2;
+}
+.contact a {
+  color: #9945ff;
+  text-decoration: none;
+  border-bottom: 1px dotted #9945ff;
+}
+
+.footnote a {
   color: #888;
 }
 
-footnote {
+.footnote {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -286,7 +353,7 @@ _Raising $250k Pre-Seed._
 
 ---
 
-## The Problem
+## Money On-Chain Is Still Moved by Hand
 
 Stablecoins are a **$300B+** asset class.
 Yet every financial action on-chain is **still manual**.
@@ -303,10 +370,9 @@ On Solana, money has **no automation layer**.
 
 ---
 
-## Our Insight
+## Custody Is the Problem, Not the Solution
 
 Most companies automate money by **taking custody**.
-We believe custody is the problem.
 
 Instead of holding your funds, Tributary uses Solana-native delegation:
 
@@ -314,22 +380,25 @@ Instead of holding your funds, Tributary uses Solana-native delegation:
 
 ---
 
-## The Product
+## An Automation Layer Native to Solana
 
-Tributary is the automation layer on Solana.
-Users define rules. The protocol executes them.
+One primitive powers every money motion:
 
-- Recurring payments
-- DCA into assets
-- Treasury rebalancing
-- Yield deployment
-- AI agent budgets
+<div class="flow">
+<span class="flow-step">WHEN</span>
+<span class="flow-arrow">&rarr;</span>
+<span class="flow-step">PULL</span>
+<span class="flow-arrow">&rarr;</span>
+<span class="flow-step good">ROUTE</span>
+</div>
 
-> DeFiSaver for Solana — powered by a native automation primitive.
+**Opportunities**: Pay a subscription &middot; DCA into an asset &middot; Rebalance a treasury &middot; stake idle capital &middot; Fund an AI agent &middot; route yield across protocols &middot; many more
+
+> Define rules once. The protocol executes them. You keep your keys.
 
 ---
 
-## Why We Win
+## Non-Custodial Infrastructure Beats Custodial Apps
 
 <div class="cols">
 <div class="col">
@@ -355,7 +424,7 @@ We're building **infrastructure** for everyone, products for profit.
 
 ---
 
-## Traction with v0 for Payments only
+## Live Protocol, Real Volume, Zero Marketing Spend
 
 **Payments** is live on Solana mainnet (subscriptions, milestones and pay-as-you-go)
 
@@ -371,7 +440,7 @@ All before raising capital to build v1 with the composability branch.
 
 ---
 
-## Business Model
+## A Protocol Fee on Every Automated Transaction
 
 **Protocol fee** on automated transaction volume.
 Every automated action becomes revenue.
@@ -386,7 +455,7 @@ Every automated action becomes revenue.
 
 ---
 
-## Why Now
+## Capital Automation Is the Next Stablecoin Primitive
 
 The next wave of digital money is **capital automation**.
 Every dollar moving on-chain will eventually need:
@@ -399,52 +468,78 @@ Tributary becomes the **execution layer** underneath that activity.
 
 ---
 
-## Market Landscape
+## A $750M Market With No Solana Incumbent
 
-The market proved demand for financial automation. Solana is missing a non-custodial layer.
+**Bottom-up market sizing** (protocol fee revenue @ 10 bps):
 
-| Company            | Chain                | What they automate                      |
-| ------------------ | -------------------- | --------------------------------------- |
-| **DeFi Saver**     | Ethereum/EVM            | Leverage, liquidation protection, yield |
-| **Summer.fi**      | Ethereum/EVM            | CDP, borrowing, leverage automation     |
-| **Instadapp**      | Ethereum/EVM            | Smart accounts, DeFi automation         |
-| **Enzyme Finance** | Ethereum/EVM            | Portfolio & vault management            |
+<div class="metrics">
+<div class="metric"><span class="num">$750M</span><span class="label">TAM &mdash; on-chain automation fees</span></div>
+<div class="metric"><span class="num">$112M</span><span class="label">SAM &mdash; Solana's share (~15%)</span></div>
+<div class="metric"><span class="num">$3.4M</span><span class="label">SOM &mdash; 3-yr capture (3% of SAM)</span></div>
+</div>
 
-DeFi Saver and Summer.fi are the closest analogues. **No one operates on Solana.**
+<em>Assumptions: $15T global stablecoin settlement/yr (Visa, Chainalysis 2024) &times; 5% automatable &times; 10 bps fee; Solana ~15% of stablecoin flow.</em>
 
----
+| Company            | Chain        | What they automate                      |
+| ------------------ | ------------ | --------------------------------------- |
+| **DeFi Saver**     | Ethereum/EVM | Leverage, liquidation protection, yield |
+| **Summer.fi**      | Ethereum/EVM | CDP, borrowing, leverage automation     |
+| **Instadapp**      | Ethereum/EVM | Smart accounts, DeFi automation         |
+| **Enzyme Finance** | Ethereum/EVM | Portfolio & vault management            |
 
-## The Difference
-
-Most competitors automate **actions**. Tributary automates **money**.
-
-> `WHEN` → `PULL` → `ROUTE`
-
-enables:
-
-- Pay a subscription
-- DCA into an asset
-- Stake idle capital
-- Rebalance a treasury
-- Fund an AI agent
-- Route capital across protocols
-- ...
+**No one operates on Solana.**
 
 ---
 
-## Team
+## Composable by Default: One Primitive Reaches Every Protocol
 
-### Fabian Schuh, Dr.-Ing
+Most competitors automate **a single action inside a walled garden**.
+Tributary automates **money across the open chain**.
+
+The `ROUTE` step is composable &mdash; the same primitive reaches:
+
+- **Payments** to any merchant or subscriber
+- **DCA** via Jupiter and major DEXs
+- **Yield** into Kamino, Drift, marginfi
+- **Treasury** rebalancing across any token pair
+- **Agents** funding any program-controlled wallet
+
+One integration unlocks every money motion on Solana.
+
+---
+
+## A Decade Building Crypto-Native Infrastructure
+
+<img class="headshot" src="https://github.com/xeroc.png" alt="Fabian Schuh" />
+
+### Fabian Schuh, Dr.-Ing &mdash; Founder &amp; CEO
 
 - web3 veteran with **10+ years** building in crypto
-- BitShares, Steemit, MakerDAO, exbet.io, Mash.fun, repo.trade
+- BitShares, Steemit, MakerDAO, Exbet.io, Mash.fun, Repo.trade
 - Successfully built products across all of web3
 - **4 prior exits**
 - Built the entire Tributary stack solo
 - Live protocol **before** funding
-- [github/@xeroc](https://github.com/xeroc) ⋅ [twitter/@xer0c](https://x.com/xer0c) ⋅ [linkedin](https://www.linkedin.com/in/fabian-schuh-phd-217b55101/)
+- [github/@xeroc](https://github.com/xeroc) &middot; [twitter/@xer0c](https://x.com/xer0c) &middot; [linkedin](https://www.linkedin.com/in/fabian-schuh-phd-217b55101/)
 
 Unique founder-market fit for this category.
+
+---
+
+## Raising $250k to Ship V1 Composability
+
+**Round:** $250k pre-seed &nbsp;&middot;&nbsp; **Runway:** 18 months
+
+Capital deployed to ship the composable automation branch:
+
+- **Engineering (60%)** &mdash; Ship v1 composable <tt>WHEN &rarr; PULL &rarr; ROUTE</tt> protocol
+- **Security &amp; audits (15%)** &mdash; Independent audit of the composable branch
+- **BD &amp; flagship integrations (15%)** &mdash; Onboard 3+ marquee partners
+- **Infra &amp; operations (10%)** &mdash; Mainnet reliability, keeper network
+
+Milestones unlocked in 12 months:
+
+> v1 live &middot; 5+ integrations &middot; $100k+ monthly volume &middot; category-defining protocol
 
 ---
 
@@ -461,3 +556,14 @@ Unique founder-market fit for this category.
 
 > Stablecoins made money internet-native.
 > Tributary makes it programmable.
+
+---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# Let's Build the Automation Layer for On-Chain Money
+
+**Fabian Schuh, Dr.-Ing** &mdash; Founder &amp; CEO, Tributary
+
+[fabian@tributary.so](mailto:fabian@tributary.so)&middot; [github/@xeroc](https://github.com/xeroc) &middot; [twitter/@xer0c](https://x.com/xer0c) &middot; [linkedin](https://www.linkedin.com/in/fabian-schuh-phd-217b55101/)
