@@ -237,6 +237,7 @@ footnote {
   letter-spacing: 0.3px;
 }
 </style>
+<script defer data-domain="angel.tributary.so" src="https://p.chainsquad.com/js/script.js"></script>
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
