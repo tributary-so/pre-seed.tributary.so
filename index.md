@@ -4,12 +4,13 @@ theme: default
 paginate: true
 size: 16:9
 ---
+
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
 # Tributary
 
-**The non-custodial capital automation layer for Solana**
+**The non-custodial automation layer for Solana**
 
 _Raising $250k Pre-Seed._
 
@@ -31,17 +32,7 @@ Stablecoins are a **$300B+** asset class.
 
 > Every action requires a signature. Vast majority sign manually!
 
-Solana, _the fastest growing of all Blockchains_, has **no automation layer**.
-
----
-
-## DeFi, but without the hoops
-
-Companies automate money through a **custodian**.
-
-Instead of holding your funds, Tributary uses Solana-native **delegation**:
-
-> Approve once. Automate forever. Keep your keys.
+Solana, with all it's DeFi, has **no automation layer**.
 
 ---
 
@@ -65,10 +56,10 @@ One primitive powers every money motion:
 
 ## Composable by Default: One Primitive Reaches Every Protocol
 
-Most competitors automate **a single action inside a walled garden**.
-Tributary automates **money across the open chain**.
+DeFi primitives offers **actions inside a walled garden**.
+Tributary automates money across the **entire chain**.
 
-The `ROUTE` step is composable &mdash; the same primitive reaches:
+The `ROUTE` step is composable, The same primitive reaches:
 
 - **Payments** to any merchant or subscriber
 - **DCA** via Jupiter and major DEXs
@@ -102,13 +93,13 @@ One integration unlocks every money motion on Solana.
 </div>
 </div>
 
-We're building **infrastructure** for everyone, products for profit.
+We're building the **infrastructure** for everyone to automate **any** flow.
 
 ---
 
-## v0 without the ROUTE
+## v1 without the ROUTE
 
-**v0** for recurring payments is live on Solana mainnet (subscriptions, milestones and pay-as-you-go)
+**v1** for recurring payments is live on Solana mainnet (subscriptions, milestones and pay-as-you-go)
 
 <div class="metrics">
 <div class="metric"><span class="num">4,000+</span><span class="label">Payments executed</span></div>
@@ -117,24 +108,19 @@ We're building **infrastructure** for everyone, products for profit.
 <div class="metric"><span class="num">$0</span><span class="label">Marketing spend</span></div>
 </div>
 
-All before raising capital to build v1 with the composability branch.
+We are now raising pre-seed to build v1 with the composability branch.
 
 ---
 
 ## A Protocol Fee on Every Automated Transaction
 
-**Protocol fee** on automated transaction volume.
-Every automated action becomes revenue.
+> **Protocol fee** on automated transaction volume.
+> Every automated action becomes revenue.
 
-- Payments
-- DCA
-- Treasury operations
-- Yield routing
-- Agent spending
+<br />
+We scale with transaction flow, without custody risk.
 
-> We scale with transaction flow, not custody risk.
-
------
+---
 
 ## A $1.4B Market With No Solana Incumbent
 
@@ -158,8 +144,7 @@ Every automated action becomes revenue.
 - BitShares, Steemit, MakerDAO, Exbet.io, Mash.fun, Repo.trade
 - Successfully built products across all of web3
 - **4 prior exits**
-- Built the entire Tributary stack solo
-- Live protocol **before** funding
+- Solana Security #2 Graduate + Superteam member
 - [github/@xeroc](https://github.com/xeroc) &middot; [twitter/@xer0c](https://x.com/xer0c) &middot; [linkedin](https://www.linkedin.com/in/fabian-schuh-phd-217b55101/)
 
 Unique founder-market fit for this category.
@@ -172,10 +157,10 @@ Unique founder-market fit for this category.
 
 Capital deployed to ship the composable automation branch:
 
-- **Engineering (60%)** &mdash; Ship v1 composable <tt>WHEN &rarr; PULL &rarr; ROUTE</tt> protocol
-- **Security &amp; audits (15%)** &mdash; Independent audit of the composable branch
-- **BD &amp; flagship integrations (15%)** &mdash; Onboard 3+ marquee partners
-- **Infra &amp; operations (10%)** &mdash; Mainnet reliability, keeper network
+- **Engineering (35%)** &mdash; Ship v1 composable <tt>WHEN &rarr; PULL &rarr; ROUTE</tt> protocol
+- **Security &amp; audits (40%)** &mdash; Independent audit of the composable branch
+- **BD &amp; flagship integrations (20%)** &mdash; Onboard 3+ marquee partners
+- **Infra &amp; operations (5%)** &mdash; Mainnet reliability, keeper network
 
 Milestones unlocked in 12 months:
 
@@ -210,94 +195,35 @@ Milestones unlocked in 12 months:
 
 <style>
 :root {
-  --color-background: #ffffff;
-  --color-foreground: #1a1a2e;
-  --color-heading: #9945ff;
-  --color-accent: #14f195;
-  --color-hr: #9945ff;
-  --color-muted: #777788;
-  --font-default: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
+  /* Stone palette — Swiss / chainsquad */
+  --bg:          #fafaf9;   /* stone-50  */
+  --surface:     #f5f5f4;   /* stone-100 */
+  --border:      #e7e5e4;   /* stone-200 */
+  --border-2:    #d6d3d1;   /* stone-300 */
+  --fg:          #1c1917;   /* stone-900 */
+  --fg-70:       rgba(28, 25, 23, 0.70);
+  --fg-50:       rgba(28, 25, 23, 0.50);
+  --fg-40:       rgba(28, 25, 23, 0.40);
+  /* One accent — Solana purple, used at multiple opacities */
+  --accent:      #9945ff;
+  --heading-strong-color:  #9945ff;
+  --accent-10:   rgba(153, 69, 255, 0.10);
+  --accent-05:   rgba(153, 69, 255, 0.05);
+  --font-sans:   'Roboto Mono', 'Inter', sans-serif;
+  --font-mono:   'JetBrains Mono', 'Roboto Mono', 'Consolas', monospace;
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 }
 
-@media screen {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  th {
-    border-bottom: 2px solid #9945ff;
-    padding: 10px 12px;
-    text-align: left;
-    font-size: 16px;
-    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .col-title.good {
-    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .metric .num {
-    font-size: 32px;
-    font-weight: 700;
-    background: linear-gradient(135deg, #9945ff 0%, #14f195 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: block;
-  }
-}
-
-@media print {
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    letter-spacing: -0.02em;
-    background: none;
-    color: #9945ff;
-  }
-  .footnote {
-    display: none;
-  }
-  script {
-    display: none;
-  }
-  th {
-    border-bottom: 2px solid #9945ff;
-    padding: 10px 12px;
-    text-align: left;
-    font-size: 16px;
-  }
-  .col-title.good {
-    color: #9945ff;
-  }
-  .metric .num {
-    font-size: 32px;
-    font-weight: 700;
-    color: #9945ff;
-    display: block;
-  }
-}
-
+/* ── Slide canvas ───────────────────────────────────────── */
 section {
-  background-color: var(--color-background);
-  background-image:
-    radial-gradient(circle at 15% 15%, rgba(153, 69, 255, 0.05), transparent 45%),
-    radial-gradient(circle at 85% 85%, rgba(20, 241, 149, 0.05), transparent 45%);
-  color: var(--color-foreground);
-  font-family: var(--font-default);
-  font-weight: 400;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-medium);
   box-sizing: border-box;
   position: relative;
   line-height: 1.6;
@@ -305,220 +231,272 @@ section {
   padding: 64px 72px;
 }
 
-h1 {
-  font-size: 58px;
-  line-height: 1.15;
-  text-align: left;
+/* ── Headings: normal weight, tight tracking, solid color ─ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.02em;
+  color: var(--fg);
 }
 
+h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  text-align: left;
+  font-weight: var(--font-weight-bold);
+}
+
+/* Section title — sits top, solid accent rule beneath (not a gradient) */
 h2 {
   position: absolute;
   top: 48px;
   left: 72px;
   right: 72px;
-  font-size: 34px;
-  padding-bottom: 16px;
+  font-size: 32px;
+  padding-bottom: 14px;
+  font-weight: var(--font-weight-bold);
 }
-
 h2::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 4px;
+  bottom: 0;
   width: 256px;
-  height: 3px;
-  background: linear-gradient(90deg, #9945ff, #14f195);
-  border-radius: 2px;
+  height: 2px;
+  background: var(--accent);
 }
-
-h2 + * {
-  margin-top: 96px;
-}
+h2 + * { margin-top: 92px; }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
   margin-top: 28px;
   margin-bottom: 10px;
 }
 
-ul, ol {
-  padding-left: 28px;
+h2, #tributary {
+  padding-bottom: 8px;
+  background: linear-gradient(135deg, #9945ff 0%, #14f195);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
+/* ── Lists ──────────────────────────────────────────────── */
+ul, ol { padding-left: 24px; }
 li {
-  margin-top: 0px !important;
-  margin-bottom: 0px;
+  margin-top: 0 !important;
+  margin-bottom: 0;
   font-size: 22px;
+  color: var(--fg-70);
 }
+li::marker { color: var(--accent); }
 
+/* ── Blockquote: thin left accent bar, flat surface ─────── */
 blockquote {
-  border-left: 4px solid #9945ff;
-  background: linear-gradient(90deg, rgba(153, 69, 255, 0.08), transparent);
+  border-left: 2px solid var(--accent);
+  background: var(--surface);
   padding: 16px 24px;
   margin: 20px 0;
-  font-size: 26px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 600;
-  color: #1a1a2e;
-  border-radius: 0 8px 8px 0;
+  font-weight: 400;
+  color: var(--fg);
 }
 
+/* ── Inline elements ────────────────────────────────────── */
 code {
-  background-color: rgba(153, 69, 255, 0.1);
-  color: #9945ff;
-  padding: 3px 10px;
-  border-radius: 5px;
+  background: var(--accent-10);
+  color: var(--accent);
+  padding: 3px 8px;
+  border-radius: 0;
   font-family: var(--font-mono);
-  font-size: 0.85em;
+  font-size: 0.82em;
 }
-
 strong {
-  color: #9945ff;
+  color: var(--accent);
   font-weight: 700;
 }
-
 em {
-  color: #444444;
+  color: var(--fg-50);
   font-style: normal;
 }
 
+/* ── Table: hairline borders, uppercase mono headers ────── */
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 17px;
   margin-top: 16px;
 }
-
+th {
+  border-top: 2px solid var(--fg);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  color: var(--fg-70);
+}
 td {
   padding: 9px 12px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--color-foreground);
+  border-bottom: 1px solid var(--border);
+  color: var(--fg);
   font-size: 16px;
 }
 
+/* ── Lead (title) slides ────────────────────────────────── */
 section.lead {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-section.lead h1 {
-  font-size: 72px;
+section.lead::before {
+  content: '';
+  position: absolute;
+  top: 64px;
+  left: 72px;
+  width: 64px;
+  height: 2px;
+  background: var(--accent);
 }
-
+section.lead h1 { font-size: 64px; }
 section.lead p {
   font-size: 26px;
-  color: var(--color-foreground);
+  color: var(--fg-70);
   margin-top: 8px;
 }
-
 section.lead em {
   display: block;
   margin-top: 20px;
   font-size: 22px;
 }
 
-/* Metrics cards */
+/* ── Metrics: accent top bar on stone surface, no rounding ─ */
 .metrics {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1px;
   margin-top: 24px;
+  background: var(--border);
 }
 .metric {
   flex: 1;
   min-width: 200px;
-  background: #eeeeee;
-  border: 1px solid #888;
-  border-radius: 10px;
+  background: var(--surface);
+  border-top: 2px solid var(--accent);
   padding: 18px 22px;
 }
+.metric .num {
+  font-family: var(--font-mono);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--fg);
+  display: block;
+}
 .metric .label {
-  font-size: 15px;
-  color: #333;
+  font-size: 11px;
+  color: var(--fg-50);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  margin-top: 4px;
+  display: block;
 }
 
-/* Comparison columns */
+/* ── Comparison columns ─────────────────────────────────── */
 .cols {
   display: flex;
-  gap: 40px;
+  gap: 1px;
   margin-top: 20px;
 }
 .col {
   flex: 1;
+  padding: 24px;
 }
 .col-title {
-  font-size: 18px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
-  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  color: var(--fg-50);
 }
-.col-title.bad { color: #aaaaaa; }
+.col-title.good {
+  color: var(--accent);
+  padding-top: 12px;
+  border-top: 2px solid var(--accent);
+  margin-top: -24px;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.col-title.bad { color: var(--fg-40); }
 
-/* Flow diagram */
+/* ── Flow diagram: outlined → filled accent for the action step ─ */
 .flow {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
   margin: 28px 0 24px;
 }
 .flow-step {
   font-family: var(--font-mono);
-  font-size: 28px;
-  font-weight: 700;
-  padding: 14px 26px;
-  border: 2px solid #9945ff;
-  border-radius: 10px;
-  background: rgba(153, 69, 255, 0.06);
-  color: #9945ff;
-  -webkit-text-fill-color: #9945ff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: 1px solid var(--border-2);
+  background: var(--bg);
+  color: var(--fg-70);
+  -webkit-text-fill-color: var(--fg-70);
 }
 .flow-step.good {
-  border-color: #14f195;
-  background: rgba(20, 241, 149, 0.10);
-  color: #0a8a5f;
-  -webkit-text-fill-color: #0a8a5f;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 .flow-arrow {
-  font-size: 34px;
-  font-weight: 900;
-  margin-bottom: 8px;
-  color: #14f195 !important;
-  -webkit-text-fill-color: #14f195;
+  font-family: var(--font-mono);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
 }
 
-/* Headshot */
+/* ── Headshot: square, thin border ──────────────────────── */
 .headshot {
   float: right;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 3px solid #9945ff;
-  margin: 96px 0 16px 28px;
+  border: 1px solid var(--border-2);
+  margin: 92px 0 16px 28px;
   object-fit: cover;
-  background: #eee;
+  background: var(--surface);
 }
 
-/* Back-cover contact block */
+/* ── Contact block ──────────────────────────────────────── */
 .contact {
   margin-top: 24px;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 2;
 }
 .contact a {
-  color: #9945ff;
+  color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px dotted #9945ff;
+  border-bottom: 1px solid var(--accent);
 }
 
-.footnote a {
-  color: #888;
-}
-
+/* ── Footnote ───────────────────────────────────────────── */
+.footnote a { color: var(--fg-40); }
 .footnote {
   position: absolute;
   bottom: 10px;
@@ -528,5 +506,20 @@ section.lead em {
   font-size: 0.7em;
   padding: 10px 20px;
   letter-spacing: 0.3px;
+  color: var(--fg-40);
+  font-family: var(--font-mono);
+}
+
+/* ── Links in body ──────────────────────────────────────── */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Print: strip any remaining screen-only chrome ─────── */
+@media print {
+  .footnote { display: none; }
+  script { display: none; }
 }
 </style>
