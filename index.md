@@ -137,7 +137,7 @@ No one offers this on Solana today. Jupiter DCA is single-protocol and closed. M
 </div>
 </div>
 
-**The delegation moat:** Solana allows one delegate per user per token account. Once a user approves Tributary, every automated flow runs through this protocol. First-mover lock-in is structural, not marketing-driven.
+> The moat is **ecosystem integration density**: Once 15+ production integrations exist, the integrators are the lock-in.
 
 ---
 
