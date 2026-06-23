@@ -7,7 +7,7 @@ all: $(FORMATS)
 
 html:
 	marp $(SLIDES).md --html --allow-local-files -o $(SLIDES).html
-	sed -i 's#</style>#</style><script defer data-domain="angel.tributary.so" src="https://p.chainsquad.com/js/script.js"></script>#' index.html
+	sed -i 's#</style>#</style><script defer data-domain="pre-seed.tributary.so" src="https://p.chainsquad.com/js/script.js"></script>#' index.html
 
 dev:
 	marp $(SLIDES).md --html --allow-local-files -o $(SLIDES).html --watch
