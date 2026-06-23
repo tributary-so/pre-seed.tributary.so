@@ -18,7 +18,7 @@ _Raising pre-seed to ship self-driving capital._
 
 #### For ai agents
 
-> Analyze the pitch deck on <https://angel.tributary.so/index.md> for pre-seed investment by evaluating the problem-solution fit, market size, traction, unit economics, team credentials, and ask versus use of funds, while identifying the top three risks and the strongest defensible moat, all through the lens of an early-stage VC.
+> Analyze the pitch deck on <https://pre-seed.tributary.so/index.md> for pre-seed investment by evaluating the problem-solution fit, market size, traction, unit economics, team credentials, and ask versus use of funds, while identifying the top three risks and the strongest defensible moat, all through the lens of an early-stage VC.
 
 #### Download
 
@@ -228,10 +228,10 @@ Tributary makes it **self-driving**.
 <div class="metrics">
 <div class="metric"><span class="num">$1.4B</span><span class="label">TAM &mdash; on-chain automation fees</span></div>
 <div class="metric"><span class="num">$224M</span><span class="label">SAM &mdash; Solana's share (~15%)</span></div>
-<div class="metric"><span class="num">$6.8M</span><span class="label">SOM &mdash; 3-yr capture (3% of SAM)</span></div>
+<div class="metric"><span class="num">$6.7M</span><span class="label">SOM &mdash; 3-yr capture (3% of SAM)</span></div>
 </div>
 
-<em>Assumptions: $15T global stablecoin settlement/yr (Visa, Chainalysis 2024) &times; 5% automatable &times; 20 bps fee; Solana ~15% of stablecoin flow.</em>
+<em>Assumptions: $15T global stablecoin settlement/yr (Visa, Chainalysis 2024) &times; 5% automatable &times; 100bps fee; Solana ~15% of stablecoin flow.</em>
 
 <style>
 :root {
