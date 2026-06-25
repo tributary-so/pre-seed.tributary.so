@@ -315,14 +315,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-h2, #tributary {
-  padding-bottom: 8px;
-  background: linear-gradient(135deg, #9945ff 0%, #14f195);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 /* ── Lists ──────────────────────────────────────────────── */
 ul, ol { padding-left: 24px; }
 li {
@@ -594,7 +586,15 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
-/* ── Print: strip any remaining screen-only chrome ─────── */
+@media screen {
+h2, #tributary {
+  padding-bottom: 8px;
+  background: linear-gradient(135deg, #9945ff 0%, #14f195);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+}
 @media print {
   .footnote { display: none; }
   script { display: none; }
